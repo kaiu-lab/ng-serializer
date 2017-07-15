@@ -1,11 +1,11 @@
 # ng serializer
 [![Build Status](https://travis-ci.org/kaiu/ng-serializer.svg?branch=master)](https://travis-ci.org/kaiu/ng-serializer)
-[![codecov](https://codecov.io/gh/kaiu/ng-serializer/branch/master/graph/badge.svg)](https://codecov.io/gh/kaiu/ng-serializer)
+[![codecov](https://codecov.io/gh/kaiu/ng-serializer/branch/master/graph/badge.svg)](https://codecov.io/gh/kaiu-io/ng-serializer)
 [![npm version](https://badge.fury.io/js/%40kaiu%2Fng-serializer.svg)](https://www.npmjs.com/package/@kaiu/ng-serializer)
-[![devDependency Status](https://david-dm.org/kaiu/ng-serializer/dev-status.svg)](https://david-dm.org/kaiu/ng-serializer?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/kaiu/ng-serializer.svg)](https://github.com/kaiu/ng-serializer/issues)
-[![GitHub stars](https://img.shields.io/github/stars/kaiu/ng-serializer.svg)](https://github.com/kaiu/ng-serializer/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kaiu/ng-serializer/master/LICENSE)
+[![devDependency Status](https://david-dm.org/kaiu-io/ng-serializer/dev-status.svg)](https://david-dm.org/kaiu-io/ng-serializer?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/kaiu-io/ng-serializer.svg)](https://github.com/kaiu-io/ng-serializer/issues)
+[![GitHub stars](https://img.shields.io/github/stars/kaiu-io/ng-serializer.svg)](https://github.com/kaiu-io/ng-serializer/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kaiu-io/ng-serializer/master/LICENSE)
 
 ## Table of contents
 
@@ -45,6 +45,7 @@ Finally use in one of your apps components:
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { Foo } from './models/foo';
+import { NgSerializerService } from '@kaiu/ng-serializer';
 
 @Component({
   template: 'foo'
@@ -62,8 +63,6 @@ export class MyComponent implements OnInit {
     }    
 }
 ```
-
-You may also find it useful to view the [demo source](https://github.com/kaiu/ng-serializer/blob/master/demo/demo.component.ts).
 
 ### Usage without a module bundler
 ```

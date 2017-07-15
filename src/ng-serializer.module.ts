@@ -1,7 +1,11 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { InjectionToken, ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgSerializerService } from './ng-serializer.service';
 import { Registration } from '@kaiu/serializer';
+import { NgSerializerServiceFactory } from './ng-serializer.factory';
+
+export const SERIALIZER_CONFIG: InjectionToken<Registration[]> = new InjectionToken('serializer.config');
+
 
 @NgModule({
     imports: [
@@ -15,12 +19,13 @@ export class NgSerializerModule {
             ngModule: NgSerializerModule,
             providers: [
                 {
+                    provide: SERIALIZER_CONFIG,
+                    useValue: registrations
+                },
+                {
                     provide: NgSerializerService,
-                    useFactory: () => {
-                        const service: NgSerializerService = new NgSerializerService();
-                        service.register(registrations);
-                        return service;
-                    }
+                    useFactory: NgSerializerServiceFactory,
+                    deps: [SERIALIZER_CONFIG]
                 }
             ]
         };

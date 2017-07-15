@@ -3,7 +3,7 @@
         "target": "ES5",
         "module": "commonjs",
         "moduleResolution": "node",
-        "sourceMap": true,
+        "sourceMap": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "removeComments": false,
@@ -15,8 +15,7 @@
     },
     "include": [
         "src/**/*",
-        "test/**/*",
-        "demo/**/*"
+        "test/**/*"
     ],
     "exclude": [
         "node_modules"
