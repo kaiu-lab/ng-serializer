@@ -1,6 +1,6 @@
 # ng serializer
-[![Build Status](https://travis-ci.org/kaiu/ng-serializer.svg?branch=master)](https://travis-ci.org/kaiu/ng-serializer)
-[![codecov](https://codecov.io/gh/kaiu/ng-serializer/branch/master/graph/badge.svg)](https://codecov.io/gh/kaiu-io/ng-serializer)
+[![Build Status](https://travis-ci.org/kaiu-io/ng-serializer.svg?branch=master)](https://travis-ci.org/kaiu-io/ng-serializer)
+[![codecov](https://codecov.io/gh/kaiu-io/ng-serializer/branch/master/graph/badge.svg)](https://codecov.io/gh/kaiu-io/ng-serializer)
 [![npm version](https://badge.fury.io/js/%40kaiu%2Fng-serializer.svg)](https://www.npmjs.com/package/@kaiu/ng-serializer)
 [![devDependency Status](https://david-dm.org/kaiu-io/ng-serializer/dev-status.svg)](https://david-dm.org/kaiu-io/ng-serializer?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/kaiu-io/ng-serializer.svg)](https://github.com/kaiu-io/ng-serializer/issues)
