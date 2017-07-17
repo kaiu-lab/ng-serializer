@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import * as webpack from 'webpack';
 import * as angularExternals from 'webpack-angular-externals';
 import * as rxjsExternals from 'webpack-rxjs-externals';
+import * as UglifyJSPlugin from 'uglifyjs-webpack-plugin';
 
 const pkg = JSON.parse(fs.readFileSync('./package.json').toString());
 
@@ -38,7 +39,7 @@ export default {
         extensions: ['.ts', '.js']
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
+        new UglifyJSPlugin({
             include: /\.min\.js$/,
             sourceMap: true
         }),
