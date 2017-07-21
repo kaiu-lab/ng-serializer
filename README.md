@@ -64,6 +64,8 @@ export class MyComponent implements OnInit {
 }
 ```
 
+The full documentation can be found on [@kaiu/serializer's website](https://kaiu-io.github.io/serializer/).
+
 ### Usage without a module bundler
 ```
 <script src="node_modules/ng-serializer/bundles/ng-serializer.umd.js"></script>
