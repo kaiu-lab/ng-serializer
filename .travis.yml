@@ -3,14 +3,14 @@ language: node_js
 node_js:
 - '8'
 
+install:
+- npm install
+- npm install --save @kaiu/serializer
+
 script: npm test
 
 notifications:
   email: false
-
-cache:
-  directories:
-    - node_modules
 
 after_success:
 - npm run codecov

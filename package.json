@@ -91,7 +91,7 @@
     },
     "peerDependencies": {
         "@angular/core": ">=2.0.0 <5.0.0",
-        "@kaiu/serializer": ">=1.0.1"
+        "@kaiu/serializer": ">=1.0.0"
     },
     "config": {
         "commitizen": {
