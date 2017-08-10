@@ -64,7 +64,7 @@ export class MyComponent implements OnInit {
 }
 ```
 
-The full documentation can be found on [@kaiu/serializer's website](https://kaiu-io.github.io/serializer/).
+The full documentation of the serializer can be found on [@kaiu/serializer's website](https://kaiu-io.github.io/serializer/).
 
 ### Usage without a module bundler
 ```

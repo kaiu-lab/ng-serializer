@@ -73,11 +73,11 @@
         "karma-webpack": "^2.0.1",
         "mocha": "^3.3.0",
         "rxjs": "^5.0.1",
-        "sinon": "^2.0.0",
+        "sinon": "^3.1.0",
         "sinon-chai": "^2.8.0",
         "standard-version": "^4.0.0",
-        "ts-loader": "2.3.0",
-        "ts-node": "^3.0.0",
+        "ts-loader": "2.3.2",
+        "ts-node": "^3.3.0",
         "tslint": "^5.1.0",
         "tslint-loader": "^3.5.3",
         "typescript": "^2.4.1",
@@ -98,6 +98,6 @@
         }
     },
     "dependencies": {
-        "@kaiu/serializer": "^0.5.5"
+        "@kaiu/serializer": "1.0.0"
     }
 }

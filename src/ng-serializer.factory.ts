@@ -1,8 +1,9 @@
 import { NgSerializerService } from './ng-serializer.service';
-import { Registration } from '@kaiu/serializer';
+import { Registration, Registry } from '@kaiu/serializer';
 
 export function NgSerializerServiceFactory(registrations?: Registration[][]): NgSerializerService {
-    const service: NgSerializerService = new NgSerializerService();
-    service.register(Array.prototype.concat.apply([], registrations));
-    return service;
+    const registry: Registry = new Registry();
+    //The concat called here is used to flatten the array., allowing multi:true in provider.
+    registry.add(Array.prototype.concat.apply([], registrations));
+    return new NgSerializerService(registry);
 }
