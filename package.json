@@ -89,9 +89,11 @@
         "webpack-rxjs-externals": "^1.0.0",
         "zone.js": "^0.8.4"
     },
+    "dependencies": {
+        "@kaiu/serializer": "^1.0.0"
+    },
     "peerDependencies": {
-        "@angular/core": ">=2.0.0 <5.0.0",
-        "@kaiu/serializer": ">=1.0.0"
+        "@angular/core": ">=2.0.0 <5.0.0"
     },
     "config": {
         "commitizen": {
