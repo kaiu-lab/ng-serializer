@@ -19,5 +19,5 @@ use(sinonChai);
 TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());
 
 declare const require: any;
-const testsContext: any = require.context('./', true, /\.spec/);
+const testsContext: any = require.context('./', true, /\.spec\.ts/);
 testsContext.keys().forEach(testsContext);

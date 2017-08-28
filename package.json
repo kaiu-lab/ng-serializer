@@ -63,7 +63,7 @@
         "fork-ts-checker-webpack-plugin": "^0.2.2",
         "html-webpack-plugin": "^2.28.0",
         "husky": "^0.14.3",
-        "istanbul-instrumenter-loader": "^2.0.0",
+        "istanbul-instrumenter-loader": "^3.0.0",
         "karma": "^1.4.1",
         "karma-chrome-launcher": "^2.1.1",
         "karma-coverage-istanbul-reporter": "^1.0.0",
@@ -73,11 +73,11 @@
         "karma-webpack": "^2.0.1",
         "mocha": "^3.3.0",
         "rxjs": "^5.0.1",
-        "sinon": "^2.0.0",
+        "sinon": "^3.1.0",
         "sinon-chai": "^2.8.0",
         "standard-version": "^4.0.0",
-        "ts-loader": "2.3.0",
-        "ts-node": "^3.0.0",
+        "ts-loader": "2.3.2",
+        "ts-node": "^3.3.0",
         "tslint": "^5.1.0",
         "tslint-loader": "^3.5.3",
         "typescript": "^2.4.1",
@@ -89,6 +89,9 @@
         "webpack-rxjs-externals": "^1.0.0",
         "zone.js": "^0.8.4"
     },
+    "dependencies": {
+        "@kaiu/serializer": "^1.0.1"
+    },
     "peerDependencies": {
         "@angular/core": ">=2.0.0 <5.0.0"
     },
@@ -96,8 +99,5 @@
         "commitizen": {
             "path": "node_modules/cz-conventional-changelog"
         }
-    },
-    "dependencies": {
-        "@kaiu/serializer": "^0.5.5"
     }
 }

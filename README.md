@@ -1,11 +1,11 @@
 # ng serializer
-[![Build Status](https://travis-ci.org/kaiu-io/ng-serializer.svg?branch=master)](https://travis-ci.org/kaiu-io/ng-serializer)
-[![codecov](https://codecov.io/gh/kaiu-io/ng-serializer/branch/master/graph/badge.svg)](https://codecov.io/gh/kaiu-io/ng-serializer)
+[![Build Status](https://travis-ci.org/kaiu-lab/ng-serializer.svg?branch=master)](https://travis-ci.org/kaiu-lab/ng-serializer)
+[![codecov](https://codecov.io/gh/kaiu-lab/ng-serializer/branch/master/graph/badge.svg)](https://codecov.io/gh/kaiu-lab/ng-serializer)
 [![npm version](https://badge.fury.io/js/%40kaiu%2Fng-serializer.svg)](https://www.npmjs.com/package/@kaiu/ng-serializer)
-[![devDependency Status](https://david-dm.org/kaiu-io/ng-serializer/dev-status.svg)](https://david-dm.org/kaiu-io/ng-serializer?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/kaiu-io/ng-serializer.svg)](https://github.com/kaiu-io/ng-serializer/issues)
-[![GitHub stars](https://img.shields.io/github/stars/kaiu-io/ng-serializer.svg)](https://github.com/kaiu-io/ng-serializer/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kaiu-io/ng-serializer/master/LICENSE)
+[![devDependency Status](https://david-dm.org/kaiu-lab/ng-serializer/dev-status.svg)](https://david-dm.org/kaiu-lab/ng-serializer?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/kaiu-lab/ng-serializer.svg)](https://github.com/kaiu-lab/ng-serializer/issues)
+[![GitHub stars](https://img.shields.io/github/stars/kaiu-lab/ng-serializer.svg)](https://github.com/kaiu-lab/ng-serializer/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kaiu-lab/ng-serializer/master/LICENSE)
 
 ## Table of contents
 
@@ -17,13 +17,13 @@
 
 ## About
 
-Angular wrapper for @kaiu/serializer library
+Angular wrapper for [@kaiu/serializer](https://www.npmjs.com/package/@kaiu/serializer) library
 
 ## Installation
 
 Install through npm:
 ```
-npm install --save ng-serializer
+npm install --save @kaiu/ng-serializer
 ```
 
 Then include in your apps module:
@@ -64,7 +64,7 @@ export class MyComponent implements OnInit {
 }
 ```
 
-The full documentation can be found on [@kaiu/serializer's website](https://kaiu-io.github.io/serializer/).
+The full documentation of the serializer can be found on [@kaiu/serializer's website](https://kaiu-lab.github.io/serializer/).
 
 ### Usage without a module bundler
 ```
@@ -79,9 +79,6 @@ The full documentation can be found on [@kaiu/serializer's website](https://kaiu
 ### Prepare your environment
 * Install [Node.js](http://nodejs.org/) and NPM
 * Install local dev dependencies: `npm install` while current directory is this repo
-
-### Development server
-Run `npm start` to start a development server on port 8000 with auto reload + tests.
 
 ### Testing
 Run `npm test` to run tests once or `npm run test:watch` to continually run tests.

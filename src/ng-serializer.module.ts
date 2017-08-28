@@ -20,6 +20,7 @@ export class NgSerializerModule {
             providers: [
                 {
                     provide: SERIALIZER_CONFIG,
+                    multi: true,
                     useValue: registrations
                 },
                 {
@@ -28,6 +29,17 @@ export class NgSerializerModule {
                     deps: [SERIALIZER_CONFIG]
                 }
             ]
+        };
+    }
+
+    static forChild(registrations?: Registration[]): ModuleWithProviders {
+        return {
+            ngModule: NgSerializerModule,
+            providers: [{
+                provide: SERIALIZER_CONFIG,
+                multi: true,
+                useValue: registrations
+            }]
         };
     }
 }
