@@ -3,7 +3,7 @@ import { Serializer, Registry } from '@kaiu/serializer';
 
 @Injectable()
 export class NgSerializerService extends Serializer {
-    constructor(public readonly registry: Registry) {
+    constructor(registry: Registry) {
         super(registry);
     }
 }
