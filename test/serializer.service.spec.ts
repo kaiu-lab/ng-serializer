@@ -103,3 +103,17 @@ describe('Serializer tests', () => {
         });
     });
 });
+
+describe('Serializer factory tests', () => {
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            imports: [
+                NgSerializerModule.forRoot()
+            ]
+        });
+    });
+
+    it('Should be able to work with no configuration provided', inject([NgSerializerService], (service: NgSerializerService) => {
+        expect(service.deserialize<Foo>({bar: 'baz'}, Foo).getBar()).to.eq('baz');
+    }));
+});

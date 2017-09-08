@@ -14,7 +14,7 @@ export const SERIALIZER_CONFIG: InjectionToken<Registration[]> = new InjectionTo
 })
 export class NgSerializerModule {
 
-    static forRoot(registrations?: Registration[]): ModuleWithProviders {
+    static forRoot(registrations: Registration[] = []): ModuleWithProviders {
         return {
             ngModule: NgSerializerModule,
             providers: [
