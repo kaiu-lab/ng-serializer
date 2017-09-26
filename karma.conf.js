@@ -16,7 +16,8 @@ module.exports = function (config) {
             require('karma-chrome-launcher'),
             require('karma-webpack'),
             require('karma-sourcemap-loader'),
-            require('karma-spec-reporter')
+            require('karma-spec-reporter'),
+            require('karma-coverage-istanbul-reporter')
         ],
 
         // list of files / patterns to load in the browser
@@ -42,9 +43,23 @@ module.exports = function (config) {
             module: {
                 rules: [
                     {
+                        test: /\.ts$/,
+                        loader: 'tslint-loader',
+                        exclude: /node_modules/,
+                        enforce: 'pre',
+                        options: {
+                            emitErrors: config.singleRun,
+                            failOnHint: config.singleRun
+                        }
+                    }, {
                         test: /\.ts/,
                         loaders: ['ts-loader', 'source-map-loader'],
                         exclude: /node_modules/
+                    }, {
+                        test: /src[\\\/].+\.ts$/,
+                        exclude: /(node_modules|\.spec\.ts$)/,
+                        loader: 'istanbul-instrumenter-loader',
+                        enforce: 'post'
                     }
                 ],
                 exprContextCritical: false
@@ -57,11 +72,15 @@ module.exports = function (config) {
             noInfo: true
         },
 
+        coverageIstanbulReporter: {
+            reports: ['text-summary', 'html', 'lcovonly'],
+            fixWebpackSourcePaths: true
+        },
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['spec'],
+        reporters: ['spec', 'coverage-istanbul'],
 
 
         // web server port
