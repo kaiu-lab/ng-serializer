@@ -10,3 +10,4 @@ dist/
 !/karma.conf.js
 !/rollup.config.js
 !/spec.bundle.js
+!/build.js
