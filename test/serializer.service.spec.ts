@@ -1,8 +1,8 @@
 import { inject, TestBed } from '@angular/core/testing';
-import { NgSerializerModule } from '../src';
-import { NgSerializerService } from '../src/ng-serializer.service';
 import { Parent } from '@kaiu/serializer';
-import { expect } from 'chai';
+
+import { NgSerializerModule } from '../src/ng-serializer.module';
+import { NgSerializerService } from '../src/ng-serializer.service';
 
 @Parent({
     discriminatorField: 'discriminator',
@@ -54,11 +54,11 @@ describe('Serializer tests', () => {
     });
 
     it('Should be able to call service methods', inject([NgSerializerService], (service: NgSerializerService) => {
-        expect(service.deserialize<Foo>({bar: 'baz'}, Foo).getBar()).to.eq('baz');
+        expect(service.deserialize<Foo>({bar: 'baz'}, Foo).getBar()).toEqual('baz');
     }));
 
     it('Should be able to use provided configuration', inject([NgSerializerService], (service: NgSerializerService) => {
-        expect(service.deserialize<Foo>({discriminator: 'child', bar: 'baz'}, Foo).getBar()).to.eq('child-baz');
+        expect(service.deserialize<Foo>({discriminator: 'child', bar: 'baz'}, Foo).getBar()).toEqual('child-baz');
     }));
 
     describe('ForChild test', () => {
@@ -78,7 +78,7 @@ describe('Serializer tests', () => {
         });
 
         it('Should be able to use forChild configuration', inject([NgSerializerService], (service: NgSerializerService) => {
-            expect(service.deserialize<Foo>({discriminator: 'child2', bar: 'baz'}, Foo).getBar()).to.eq('child2-baz');
+            expect(service.deserialize<Foo>({discriminator: 'child2', bar: 'baz'}, Foo).getBar()).toEqual('child2-baz');
         }));
 
         describe('Override test', () => {
@@ -98,7 +98,7 @@ describe('Serializer tests', () => {
             });
 
             it('Should use overridden configuration', inject([NgSerializerService], (service: NgSerializerService) => {
-                expect(service.deserialize<Foo>({discriminator: 'child2', bar: 'baz'}, Foo).getBar()).to.eq('child3-baz');
+                expect(service.deserialize<Foo>({discriminator: 'child2', bar: 'baz'}, Foo).getBar()).toEqual('child3-baz');
             }));
         });
     });
@@ -114,6 +114,6 @@ describe('Serializer factory tests', () => {
     });
 
     it('Should be able to work with no configuration provided', inject([NgSerializerService], (service: NgSerializerService) => {
-        expect(service.deserialize<Foo>({bar: 'baz'}, Foo).getBar()).to.eq('baz');
+        expect(service.deserialize<Foo>({bar: 'baz'}, Foo).getBar()).toEqual('baz');
     }));
 });
