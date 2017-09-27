@@ -1,6 +1,6 @@
 {
   "name": "@kaiu/ng-serializer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Angular wrapper for @kaiu/serializer library",
   "main": "./bundles/ng-serializer.umd.js",
   "module": "./modules/ng-serializer.es5.js",
@@ -11,7 +11,7 @@
     "test": "karma start",
     "commit": "git-cz",
     "prerelease": "npm test",
-    "release:git": "git add package.json && git commit -m \"chore: bump version number\" && standard-version && git push --follow-tags origin master",
+    "release:git": "git add package.json && standard-version && git push --follow-tags origin master",
     "release:npm": "npm run build && npm publish dist",
     "release": "npm run release:git && npm run release:npm",
     "postrelease": "npm run build:clean",
