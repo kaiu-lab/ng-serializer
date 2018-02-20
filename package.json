@@ -1,6 +1,6 @@
 {
   "name": "@kaiu/ng-serializer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Angular wrapper for @kaiu/serializer library",
   "main": "./bundles/ng-serializer.umd.js",
   "module": "./modules/ng-serializer.es5.js",
@@ -33,8 +33,7 @@
     "serializer"
   ],
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@angular/common": ">= 4.1.0",
     "@angular/core": ">= 4.1.0",
