@@ -34,11 +34,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@kaiu/serializer": "^1.0.1"
   },
   "peerDependencies": {
     "@angular/common": ">= 4.1.0",
-    "@angular/core": ">= 4.1.0"
+    "@angular/core": ">= 4.1.0",
+    "@kaiu/serializer": "^1.1.0"
   },
   "devDependencies": {
     "@angular/animations": "4.1.0",
@@ -51,6 +51,7 @@
     "@angular/platform-server": "4.1.0",
     "@types/jasmine": "2.6.0",
     "@types/node": "8.0.1",
+    "@kaiu/serializer": "1.1.0",
     "chalk": "1.1.3",
     "codecov": "2.1.0",
     "codelyzer": "3.1.1",

@@ -23,7 +23,7 @@ Angular wrapper for [@kaiu/serializer](https://www.npmjs.com/package/@kaiu/seria
 
 Install through npm:
 ```
-npm install --save @kaiu/ng-serializer
+npm install --save @kaiu/ng-serializer @kaiu/serializer
 ```
 
 Then include in your apps module:
