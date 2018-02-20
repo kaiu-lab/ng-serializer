@@ -19,7 +19,6 @@ before_install:
 
 install:
   - npm install
-  - npm install @kaiu/serializer
 
 script:
   - npm test
