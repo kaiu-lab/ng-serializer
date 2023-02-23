@@ -1,11 +1,26 @@
 {
-  "name": "ng-serializer",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^14.2.0",
-    "@angular/core": "^14.2.0"
+  "name": "@kaiu/ng-serializer",
+  "version": "2.0.0",
+  "description": "Angular wrapper for @kaiu/serializer library",
+  "author": "Supamiu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaiu-lab/ng-serializer.git"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  }
+  "bugs": {
+    "url": "https://github.com/kaiu-lab/ng-serializer/issues"
+  },
+  "homepage": "https://github.com/kaiu-lab/ng-serializer#readme",
+  "keywords": [
+    "angular2",
+    "angular",
+    "serializer"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": ">= 12.0.0",
+    "@angular/core": ">= 12.0.0",
+    "@kaiu/serializer": "^1.1.0"
+  },
+  "dependencies": {}
 }

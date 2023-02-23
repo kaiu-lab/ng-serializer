@@ -24,7 +24,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "release:git": "git add package.json && standard-version && git push --follow-tags origin master",
-    "release:npm": " yarn build && yarn publish dist",
+    "release:npm": "ng build && yarn publish dist/ng-serializer",
     "release": "yarn release:git && yarn release:npm"
   },
   "private": true,
