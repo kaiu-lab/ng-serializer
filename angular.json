@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ng-serializer": {
+      "projectType": "library",
+      "root": "projects/ng-serializer",
+      "sourceRoot": "projects/ng-serializer/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-serializer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-serializer/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-serializer/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-serializer/src/test.ts",
+            "tsConfig": "projects/ng-serializer/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-serializer/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }

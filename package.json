@@ -1,37 +1,73 @@
 {
-  "name": "ng-serializer",
-  "version": "0.0.0",
+  "name": "@kaiu/ng-serializer",
+  "version": "1.1.1",
+  "description": "Angular wrapper for @kaiu/serializer library",
+  "author": "Supamiu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaiu-lab/ng-serializer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaiu-lab/ng-serializer/issues"
+  },
+  "homepage": "https://github.com/kaiu-lab/ng-serializer#readme",
+  "keywords": [
+    "angular2",
+    "angular",
+    "serializer"
+  ],
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "release:git": "git add package.json && standard-version && git push --follow-tags origin master",
+    "release:npm": " yarn build && yarn publish dist",
+    "release": "yarn release:git && yarn release:npm"
   },
   "private": true,
+  "peerDependencies": {
+    "@angular/common": ">= 12.0.0",
+    "@angular/core": ">= 12.0.0",
+    "@kaiu/serializer": "^1.1.0"
+  },
   "dependencies": {
+    "@kaiu/serializer": "^1.4.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.10",
     "@angular/animations": "^14.2.0",
+    "@angular/cli": "~14.2.6",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
+    "@angular/compiler-cli": "^14.2.0",
     "@angular/core": "^14.2.0",
     "@angular/forms": "^14.2.0",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
-  },
-  "devDependencies": {
-    "@angular/cli": "~14.2.6",
-    "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
+    "chalk": "1.1.3",
+    "codecov": "2.1.0",
+    "commitizen": "2.9.6",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
+    "ng-packagr": "^14.2.0",
+    "rxjs": "~7.5.0",
+    "standard-version": "4.2.0",
+    "tslib": "^2.3.0",
+    "typescript": "~4.7.2",
+    "zone.js": "~0.11.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
