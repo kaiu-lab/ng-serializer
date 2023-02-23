@@ -1,6 +1,6 @@
 {
   "name": "@kaiu/ng-serializer",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Angular wrapper for @kaiu/serializer library",
   "author": "Supamiu",
   "repository": {
